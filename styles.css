@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin: 0 auto;
+  height: 300;
+}
+.card1 {
+  background-color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.card1 .card-body {
+  padding: 8%;
+}
+.card1 h5 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.card1 h6 {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.card1 p {
+  color: hsl(218, 22%, 67%);
+}
+.card2 {
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0;
+}
+.card2.card-body {
+  padding: 8%;
+}
+.card2 h5 {
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.card2 h6 {
+  font-weight: 700;
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+span {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.705);
+  font-weight: 400;
+}
+.card2 p {
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+}
+button {
+  background-color: hsl(71, 73%, 54%) !important;
+  color: hsl(204, 43%, 93%) !important;
+  width: 100%;
+}
+
+.card3 {
+  background-color: hsla(179, 62%, 43%, 0.699);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.card3 .card-body {
+  padding: 8%;
+}
+.card3 h5 {
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.card3 p {
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+
+  margin-right: 2rem;
+}
+
+@media all and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  .card2 {
+    height: 100%;
+
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .card3 {
+    border-bottom-left-radius: 0;
+  }
+}
+@media all and (min-width: 1024px) {
+  .container {
+    padding: 0 12rem 0 12rem;
+  }
+
+  .card2 p {
+    margin-bottom: 3.5rem;
+  }
+  .card3 {
+    height: 100%;
+  }
+}
+@media all and (min-width: 1440px) {
+  .card2 p {
+    margin-bottom: 1.5rem;
+  }
+}
